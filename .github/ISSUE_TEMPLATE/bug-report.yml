@@ -1,0 +1,100 @@
+name: "🐛 Bug Report"
+description: "Report a bug or unexpected behavior"
+title: "Bug: "
+labels: ["bug", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 Bug Report
+        Please fill out all sections to help us reproduce and fix the issue.
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      options:
+        - "🔴 P0 - Critical (Blocking/Data Loss)"
+        - "🟠 P1 - High (Major Function Broken)"
+        - "🟡 P2 - Medium (Minor Issue)"
+        - "🟢 P3 - Low (Cosmetic)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: estimate
+    attributes:
+      label: "Estimated Effort"
+      description: "How much work is this?"
+      options:
+        - "XS (1-2 hours)"
+        - "S (3-5 hours)"
+        - "M (6-12 hours)"
+        - "L (1-2 days)"
+        - "XL (3-5 days)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Clear and concise description of the bug"
+      placeholder: "When I do X, Y happens instead of Z..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "How can we reproduce this issue?"
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behavior"
+      description: "What should have happened?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual Behavior"
+      description: "What actually happened?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots/Logs"
+      description: "Add screenshots or error logs if applicable"
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "OS, Browser, Device, etc."
+      placeholder: "macOS Chrome 120, iPhone 15 Safari"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Context"
+      description: "Any other relevant information"
+
+  - type: textarea
+    id: related
+    attributes:
+      label: "Related Issues/PRs"
+      placeholder: "#123, #456"

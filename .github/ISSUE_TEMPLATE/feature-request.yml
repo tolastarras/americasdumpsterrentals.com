@@ -1,0 +1,72 @@
+name: "🚀 Feature Request"
+description: "Suggest a new feature or enhancement"
+title: "Feature: "
+labels: ["enhancement", "backlog"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Feature Request
+        Help us understand your feature request.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      options:
+        - "🔴 P0 - Critical (Blocking/Data Loss)"
+        - "🟠 P1 - High (Major Function Broken)"
+        - "🟡 P2 - Medium (Minor Issue)"
+        - "🟢 P3 - Low (Cosmetic)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: effort
+    attributes:
+      label: "Estimated Effort"
+      options:
+        - "XS (1-2 days)"
+        - "S (3-5 days)"
+        - "M (1-2 weeks)"
+        - "L (3-4 weeks)"
+        - "XL (1+ month)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem Statement"
+      description: "What problem are you trying to solve?"
+      placeholder: "As a [user type], I'm frustrated by..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed Solution"
+      description: "How should this feature work?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives Considered"
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance Criteria"
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Context"

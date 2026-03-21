@@ -1,0 +1,38 @@
+# Common build and system files
+.DS_Store
+node_modules
+/dist
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Environmental variables
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Operating system files
+Thumbs.db
+desktop.ini
+*.log
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Next.js specific
+.next/
+next-env.d.ts
+.vercel

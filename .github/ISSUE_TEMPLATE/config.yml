@@ -1,0 +1,26 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: "📋 Kanban Board"
+    url: "https://github.com/users/tolastarras/projects/7"
+    about: "View our project Kanban board"
+  
+  - name: "💬 Discussions"
+    url: "https://github.com/tolastarras/americasdumpsterrentals.com/discussions"
+    about: "Ask questions or share ideas"
+  
+  - name: "📚 Documentation"
+    url: "https://github.com/tolastarras/americasdumpsterrentals.com/wiki"
+    about: "Check our documentation"
+  
+  - name: "🌐 Live Website"
+    url: "https://americasdumpsterrentals.com"
+    about: "Visit the live website"
+
+  - name: "📄 README"
+    url: "https://github.com/tolastarras/americasdumpsterrentals.com#readme"
+    about: "Check project README for documentation"
+  
+  - name: "🐛 Report Issue"
+    url: "https://github.com/tolastarras/americasdumpsterrentals.com/issues/new/choose"
+    about: "Report bugs using our templates"

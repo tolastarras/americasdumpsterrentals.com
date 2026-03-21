@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.categories-badge {
+  @apply cursor-pointer hover:bg-primary hover:text-primary-foreground px-3 py-1 text-sm font-medium rounded-full;
+}

@@ -1,0 +1,94 @@
+name: "📋 Task"
+description: "General development task"
+title: "Task: "
+labels: ["task"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📋 Development Task
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "📁 Category"
+      options:
+        - "Core Development"
+        - "UI/UX"
+        - "Backend/API"
+        - "DevOps/Infrastructure"
+        - "Database"
+        - "Security"
+        - "Documentation"
+        - "Testing"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: task-type
+    attributes:
+      label: "🔧 Task Type"
+      options:
+        - "Automation"
+        - "Bug"
+        - "Chore"
+        - "Documentation"
+        - "General Development"
+        - "Refactor"
+        - "Security"
+        - "Test"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: "How urgent is this task?"
+      options:
+        - "🔴 P0 - Critical (Blocking/Data Loss)"
+        - "🟠 P1 - High (Major Function Broken)"
+        - "🟡 P2 - Medium (Minor Issue)"
+        - "🟢 P3 - Low (Cosmetic)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: estimate
+    attributes:
+      label: "Estimated Effort"
+      description: "How much work is this?"
+      options:
+        - "XS (1-2 hours)"
+        - "S (3-5 hours)"
+        - "M (6-12 hours)"
+        - "L (1-2 days)"
+        - "XL (3-5 days)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Completion Criteria"
+
+  - type: textarea
+    id: related
+    attributes:
+      label: "Related Issues/PRs"
+      placeholder: "#123, #456"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Additional Notes"
+      placeholder: "Any special instructions or considerations?"

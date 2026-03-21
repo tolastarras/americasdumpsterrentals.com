@@ -1,0 +1,179 @@
+/* ===== Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+/* ===== Tailwind v4 Base ===== */
+@import "tailwindcss";
+
+/* ===== Custom Theme (CSS variables & utility classes) ===== */
+@theme {
+  /* ---------- Fonts ---------- */
+  --font-heading: 'Oswald', sans-serif;
+  --font-body:    'Source Sans 3', sans-serif;
+
+  /* ---------- Colors (using HSL variables from :root) ---------- */
+  --color-background:        hsl(var(--background));
+  --color-foreground:        hsl(var(--foreground));
+  --color-card:              hsl(var(--card));
+  --color-card-foreground:   hsl(var(--card-foreground));
+  --color-popover:           hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary:           hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary:         hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted:             hsl(var(--muted));
+  --color-muted-foreground:  hsl(var(--muted-foreground));
+  --color-accent:            hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive:       hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  /* Custom named colors */
+  --color-navy:              hsl(var(--navy));
+  --color-navy-light:        hsl(var(--navy-light));
+  --color-orange:            hsl(var(--orange));
+  --color-orange-dark:       hsl(var(--orange-dark));
+  --color-cream:             hsl(var(--cream));
+  --color-steel:             hsl(var(--steel));
+
+  /* Sidebar (shadcn/ui) */
+  --color-sidebar:             hsl(var(--sidebar-background));
+  --color-sidebar-foreground:  hsl(var(--sidebar-foreground));
+  --color-sidebar-primary:     hsl(var(--sidebar-primary));
+  --color-sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --color-sidebar-accent:      hsl(var(--sidebar-accent));
+  --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
+  --color-sidebar-border:      hsl(var(--sidebar-border));
+  --color-sidebar-ring:        hsl(var(--sidebar-ring));
+
+  /* Borders & rings */
+  --color-border: hsl(var(--border));
+  --color-input:  hsl(var(--input));
+  --color-ring:   hsl(var(--ring));
+
+  /* Border radius */
+  --radius: var(--radius);
+}
+
+/* ===== Base HSL variables (light mode) ===== */
+:root {
+  --background: 210 20% 98%;
+  --foreground: 0 0% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 10%;
+  --primary: 215 45% 26%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 28 100% 52%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 210 15% 93%;
+  --muted-foreground: 0 0% 40%;
+  --accent: 28 100% 50%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 210 15% 88%;
+  --input: 210 15% 88%;
+  --ring: 28 100% 50%;
+  --radius: 0.5rem;
+  --navy: 0 0% 8%;
+  --navy-light: 0 0% 20%;
+  --orange: 28 100% 50%;
+  --orange-dark: 24 95% 42%;
+  --cream: 40 30% 96%;
+  --steel: 0 0% 35%;
+  --sidebar-background: 0 0% 98%;
+  --sidebar-foreground: 240 5.3% 26.1%;
+  --sidebar-primary: 240 5.9% 10%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 240 4.8% 95.9%;
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: 220 13% 91%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
+  --navbar-height: 110px;
+}
+
+html, body {
+  overscroll-behavior: none;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--navbar-height);
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* ===== Custom components ===== */
+@layer components {
+  .section-diagonal {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0 100%);
+  }
+
+  .section-diagonal-reverse {
+    clip-path: polygon(0 60px, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+/* ===== Custom utilities ===== */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

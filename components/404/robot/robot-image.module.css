@@ -1,0 +1,29 @@
+@keyframes arm-left {
+  0%, 100% { transform: rotate(0deg) translate(0, 0); }
+  50% { transform: rotate(-60deg) translate(10px, -5px); }
+}
+
+@keyframes arm-right {
+  0%, 100% { transform: rotate(0deg) translate(0, 0); }
+  50% { transform: rotate(60deg) translate(-10px, 5px); }
+}
+
+
+.animate-arm-left {
+  animation: arm-left 300ms ease-in-out infinite;
+}
+
+.animate-arm-right {
+  animation: arm-right 300ms ease-in-out infinite;
+}
+
+/* Shake for angry robot */
+@keyframes shake {
+  0%,100% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(-4px) rotate(-1deg); }
+  75% { transform: translateX(4px) rotate(1deg); }
+}
+
+.shake {
+  animation: shake 0.1s infinite;
+}

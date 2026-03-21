@@ -1,0 +1,156 @@
+import {
+  Body,
+  Button,
+  Column,
+  Container,
+  Head,
+  Html,
+  Img,
+  Link,
+  Preview,
+  Row,
+  Section,
+  Tailwind,
+} from '@react-email/components';
+
+import { BASE_URL } from '@/constants/urls';
+
+interface ContactFormEmailProps {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
+export const ContactFormEmail = ({
+  name,
+  email,
+  subject,
+  message,
+}: ContactFormEmailProps) => (
+  <Html>
+    <Head />
+    <Preview>
+      {subject}
+    </Preview>
+    <Tailwind>
+      <Body className="bg-white">
+        <Container className="mx-auto bg-white border-2 border-gray-200 rounded-lg w-full">
+          {/* Header */}
+          <Section>
+            <Row className="h-20 bg-blue-100">
+              <Column className="h-12 w-12 overflow-hidden text-center align-middle leading-0">
+                <Link href="https://americasdumpsterrentals.com">
+                  <Img
+                    alt="logo"
+                    width="40"
+                    height="40"
+                    src="https://americasdumpsterrentals.com/img/tolas-logo.b6da2144.png"
+                    className="w-fit object-contain object-center px-2"
+                  />
+                </Link>
+              </Column>
+              <Column className="w-fit px-2">
+                <Row>
+                  <Column className="text-xl font-bold text-gray-900">
+                    New Form Submission
+                  </Column>
+                </Row>
+                <Row>
+                  <Column className="text-gray-600 font-normal text-xs leading-3">
+                    Received on {new Date().toLocaleString('es-ES', { timeZone: 'Europe/Madrid' })}
+                  </Column>
+                </Row>
+              </Column>
+            </Row>
+          </Section>
+
+          {/* Contact Details */}
+          <Section className="mt-8">
+            <Row className="text-lg text-left border-b border-gray-200">
+              <Column className="text-left font-semibold text-gray-900 px-2">
+                Contact Information
+              </Column>
+            </Row>
+            <Row className="mt-5 h-8">
+              <Column className="text-left align-top w-16 text-base font-medium text-gray-800 px-2">
+                <span className="mr-2">Name:</span>
+              </Column>
+              <Column className="align-top text-base text-gray-500">
+                {name}
+              </Column>
+            </Row>
+            <Row className="h-8">
+              <Column className="align-top w-16 text-base font-medium text-gray-800 px-2">
+                <span className="mr-2">Email:</span>
+              </Column>
+              <Column className="align-top text-base">
+                <Link href={`mailto:${email}`} className="text-blue-600 text-base">
+                  {email}
+                </Link>
+              </Column>
+            </Row>
+            <Row className="h-8">
+              <Column className="text-left align-top w-16 text-base font-medium text-gray-800 px-2">
+                <span className="mr-2">Subject:</span>
+              </Column>
+              <Column className="align-top text-base text-gray-500">
+                {subject}
+              </Column>
+            </Row>
+          </Section>
+
+          {/* Message */}
+          <Section className="mt-5 text-left">
+            <Row className="text-lg text-left border-b border-gray-200">
+              <Column className="font-semibold text-base text-gray-900 px-2">
+                Message
+              </Column>
+            </Row>
+            <Row className="h-8">
+              <Column className="align-top text-gray-500 py-5 px-2 text-base">
+                { message }
+              </Column>
+            </Row>
+          </Section>
+
+          {/* Action Buttons */}
+          <Section>
+            <Row>
+              <Column align="center">
+                <Row>
+                  <Column align="center" className="w-1/2 px-4">
+                    <Button
+                      className="box-border w-full rounded-lg bg-blue-600 p-3 text-center font-semibold text-white"
+                      href={`mailto:${email}?subject=Re: ${encodeURIComponent(subject)}`}
+                    >
+                      Reply via Email
+                    </Button>
+                  </Column>
+                  <Column align="center" className="w-1/2 px-4">
+                    <Button
+                      className="box-border w-full rounded-lg border border-gray-200 border-solid bg-gray-50 p-3 text-center font-semibold text-gray-600"
+                      href={`${BASE_URL}/admin/messages`}
+                    >
+                      View All Messages
+                    </Button>
+                  </Column>
+                </Row>
+              </Column>
+            </Row>
+          </Section>
+
+          {/* Footer */}
+          <Section className="my-6">
+            <Section className="text-gray-500 text-sm text-center">
+              Email automatically generated by americasdumpsterrentals.com
+            </Section>
+            <Section className="text-gray-400 text-xs text-center">
+              © {new Date().getFullYear()} americasdumpsterrentals.com. All rights reserved.
+            </Section>
+          </Section>
+        </Container>
+      </Body>
+    </Tailwind>
+  </Html>
+);
