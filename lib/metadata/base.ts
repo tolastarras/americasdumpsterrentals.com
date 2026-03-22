@@ -12,12 +12,10 @@ export const baseMetadata: Metadata = {
     default: 'Americas Dumpster Rentals',
     template: '%s | Americas Dumpster Rentals',
   },
-  description:
-    'We build high-performance web applications that drive business results through exceptional user experiences.',
+  description: 'Dumpster Rentals Delivered & Hauled Away',
   openGraph: {
-    title: 'Americas Dumpster Rentals – We Build High-Performance Web Apps',
-    description:
-      'We build high-performance web applications that drive business results through exceptional user experiences.',
+    title: 'Americas Dumpster Rentals – Dumpster Rentals in Jacksonville, FL',
+    description: 'Dumpster Rentals Delivered & Hauled Away',
     url: 'https://americasdumpsterrentals.com',
     siteName: 'Americas Dumpster Rentals',
     images: [
@@ -25,7 +23,7 @@ export const baseMetadata: Metadata = {
         url: 'https://americasdumpsterrentals.com/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Americas Dumpster Rentals – Web Development & UI/UX Design',
+        alt: 'Americas Dumpster Rentals – Dumpster Rentals in Jacksonville, FL',
       },
     ],
     locale: 'en_US',
@@ -33,9 +31,8 @@ export const baseMetadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Americas Dumpster Rentals – We Build High-Performance Web Apps',
-    description:
-      'We build high-performance web applications that drive business results through exceptional user experiences.',
+    title: 'Americas Dumpster Rentals – Dumpster Rentals in Jacksonville, FL',
+    description: 'Dumpster Rentals Delivered & Hauled Away',
     images: ['https://americasdumpsterrentals.com/twitter-image.png'],
   },
   other: {

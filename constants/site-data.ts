@@ -8,7 +8,6 @@ export const FEATURES = [
     icon: Lightbulb,
     color: 'text-amber-500',
     gradient: 'from-amber-400 to-orange-500',
-    illustration: '/images/process.svg',
   },
   {
     label: 'Process',

@@ -14,7 +14,7 @@
     "start": "next start",
     "check": "pnpm run check:types && pnpm run lint && pnpm run lint:css",
     "check:types": "tsc --noEmit",
-    "validate": "pnpm run check:types && pnpm run lint && pnpm run build"
+    "validate": "pnpm run check:types && pnpm run lint && pnpm run lint:css && pnpm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

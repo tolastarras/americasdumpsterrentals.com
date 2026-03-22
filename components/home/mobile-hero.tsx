@@ -18,7 +18,7 @@ export const MobileHero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
       <div className="absolute inset-0 z-0">
-        <h1>We Build Digital Solutions</h1>
+        <h1>Dumpster Rentals Delivered & Hauled Away</h1>
         <Image
           src="/images/office-desktop2.webp"
           alt="Office background"

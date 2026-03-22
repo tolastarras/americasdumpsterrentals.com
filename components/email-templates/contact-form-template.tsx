@@ -45,7 +45,7 @@ export const ContactFormEmail = ({
                     alt="logo"
                     width="40"
                     height="40"
-                    src="https://americasdumpsterrentals.com/img/tolas-logo.b6da2144.png"
+                    src="https://americasdumpsterrentals.com/logo.png"
                     className="w-fit object-contain object-center px-2"
                   />
                 </Link>
