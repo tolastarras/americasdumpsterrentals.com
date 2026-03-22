@@ -4,8 +4,8 @@ const publicEnvVars = [
 ] as const;
 
 const serverEnvVars = [
-  // 'RESEND_API_KEY',
-  // 'RESEND_WEBHOOK_SECRET',
+  'RESEND_API_KEY',
+  'RESEND_WEBHOOK_SECRET',
 ] as const;
 
 function validateEnv(vars: readonly string[], context: string) {
