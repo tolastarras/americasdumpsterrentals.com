@@ -24,7 +24,7 @@ export const COMPANY = {
   state: 'FL',
   region: 'Northeast Florida',
   facebook: 'https://www.facebook.com/TrailerRentalCompany',
-  calendlyUrl: 'https://calendly.com/americasdumpsterrentals',
+  calendlyUrl: 'https://calendly.com/dumpsterrentals',
   googleMapsEmbed:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.682646463422!2d-81.8928266848795!3d30.305307981794644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5a7e143a053a5%3A0xed5d2f25ce3ff2e0!2s4443%20Staple%20Ct%2C%20Middleburg%2C%20FL%2032068!5e0!3m2!1sen!2sus!4v1742481000000!5m2!1sen!2sus',
   hours: {

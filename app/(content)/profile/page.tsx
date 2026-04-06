@@ -25,7 +25,7 @@ export default function ProfilePage() {
   const [user, setUser] = useState<User>({
     id: '1',
     name: 'Alex Johnson',
-    email: 'alex@americasdumpsterrentals.com',
+    email: 'alex@dumpsterrentals.com',
     avatar: '',
     role: 'Premium Member',
     joinDate: 'January 2024',

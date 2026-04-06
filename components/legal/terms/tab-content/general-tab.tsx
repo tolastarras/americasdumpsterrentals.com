@@ -16,7 +16,7 @@ const GeneralTermsTab = () => {
               Intellectual Property
             </h4>
             <p className="text-muted-foreground">
-              All source code, designs, and content on americasdumpsterrentals.com are protected by copyright and other intellectual property laws. Unauthorized use may violate these laws.
+              All source code, designs, and content on dumpsterrentals.com are protected by copyright and other intellectual property laws. Unauthorized use may violate these laws.
             </p>
           </div>
 

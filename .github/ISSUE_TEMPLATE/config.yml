@@ -6,21 +6,21 @@ contact_links:
     about: "View our project Kanban board"
   
   - name: "💬 Discussions"
-    url: "https://github.com/tolastarras/americasdumpsterrentals.com/discussions"
+    url: "https://github.com/tolastarras/dumpsterrentals/discussions"
     about: "Ask questions or share ideas"
   
   - name: "📚 Documentation"
-    url: "https://github.com/tolastarras/americasdumpsterrentals.com/wiki"
+    url: "https://github.com/tolastarras/dumpsterrentals/wiki"
     about: "Check our documentation"
   
   - name: "🌐 Live Website"
-    url: "https://americasdumpsterrentals.com"
+    url: "https://dumpsterrentals.vercel.app/"
     about: "Visit the live website"
 
   - name: "📄 README"
-    url: "https://github.com/tolastarras/americasdumpsterrentals.com#readme"
+    url: "https://github.com/tolastarras/dumpsterrentals#readme"
     about: "Check project README for documentation"
   
   - name: "🐛 Report Issue"
-    url: "https://github.com/tolastarras/americasdumpsterrentals.com/issues/new/choose"
+    url: "https://github.com/tolastarras/dumpsterrentals/issues/new/choose"
     about: "Report bugs using our templates"

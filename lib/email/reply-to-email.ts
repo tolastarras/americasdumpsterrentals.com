@@ -11,7 +11,7 @@ export async function replyToEmail(
   resend: Resend,
   eventData: ReplyEmailData,
   replyBody: string,
-  fromAddress: string = 'Your Name <contact@americasdumpsterrentals.com>',
+  fromAddress: string = 'Your Name <contact@dumpsterrentals.com>',
 ) {
   const { from, subject, message_id } = eventData;
 

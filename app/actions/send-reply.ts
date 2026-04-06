@@ -28,7 +28,7 @@ export async function sendReplyAction({
       resend,
       eventData,
       replyBody,
-      'Tolastarras <contact@americasdumpsterrentals.com>',
+      'Tolastarras <contact@dumpsterrentals.com>',
     );
     return { success: true, data: result };
   } catch (error) {

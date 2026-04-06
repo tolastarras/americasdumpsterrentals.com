@@ -16,14 +16,14 @@ export const baseMetadata: Metadata = {
   openGraph: {
     title: 'Americas Dumpster Rentals – Dumpster Rentals in Jacksonville, FL',
     description: 'Dumpster Rentals Delivered & Hauled Away',
-    url: 'https://americasdumpsterrentals.com',
-    siteName: 'Americas Dumpster Rentals',
+    url: 'https://dumpsterrentals.vercel.app/',
+    siteName: 'Dumpster Rentals',
     images: [
       {
-        url: 'https://americasdumpsterrentals.com/og-image.png',
+        url: 'https://dumpsterrentals.vercel.app/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Americas Dumpster Rentals – Dumpster Rentals in Jacksonville, FL',
+        alt: 'Dumpster Rentals – Dumpster Rentals in Jacksonville, FL',
       },
     ],
     locale: 'en_US',
@@ -33,10 +33,10 @@ export const baseMetadata: Metadata = {
     card: 'summary_large_image',
     title: 'Americas Dumpster Rentals – Dumpster Rentals in Jacksonville, FL',
     description: 'Dumpster Rentals Delivered & Hauled Away',
-    images: ['https://americasdumpsterrentals.com/twitter-image.png'],
+    images: ['https://dumpsterrentals.vercel.app/twitter-image.png'],
   },
   other: {
-    'og:see_also': 'https://www.youtube.com/@americasdumpsterrentals',
+    'og:see_also': 'https://www.youtube.com/@dumpsterrentals',
   },
   robots: {
     index: true,
@@ -59,9 +59,9 @@ export const baseMetadata: Metadata = {
   },
   manifest: '/icons/site.webmanifest',
   alternates: {
-    canonical: 'https://americasdumpsterrentals.com',
+    canonical: 'https://dumpsterrentals.vercel.app/',
     languages: {
-      'en-US': 'https://americasdumpsterrentals.com',
+      'en-US': 'https://dumpsterrentals.vercel.app/',
     },
   },
   verification: {

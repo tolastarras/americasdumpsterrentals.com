@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     ...baseMetadata.openGraph,
     title: 'Privacy Policy | Americas Dumpster Rentals',
     description: 'Learn how we handle your data with transparency and care.',
-    url: 'https://americasdumpsterrentals.com/privacy',
+    url: 'https://dumpsterrentals.vercel.app/privacy',
   },
   robots: {
   ...(typeof baseMetadata.robots === 'object' ? baseMetadata.robots : {}),

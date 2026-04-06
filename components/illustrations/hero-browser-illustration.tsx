@@ -58,7 +58,7 @@ export const HeroBrowserIllustration = () => {
           textAnchor="middle"
           fontFamily="monospace"
         >
-          americasdumpsterrentals.com
+          dumpsterrentals.com
         </text>
         <rect x="10" y="40" width="100" height="310" fill="rgba(0,0,0,0.2)" />
         <rect x="10" y="40" width="100" height="1" fill="rgba(96,165,250,0.12)" />

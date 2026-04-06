@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Terms of Service | Americas Dumpster Rentals',
     description:
       'Understand the rules and guidelines for using our high-performance web applications and services.',
-    url: 'https://americasdumpsterrentals.com/terms',
+    url: 'https://dumpsterrentals.vercel.app/terms',
   },
   robots: {
     ...(typeof baseMetadata.robots === 'object' ? baseMetadata.robots : {}),
@@ -34,7 +34,7 @@ export default function TermsOfServicePage() {
         <section>
           <h2 className="font-semibold mb-3">1. Acceptance of Terms</h2>
           <p className="text-sm text-muted-foreground">
-            By accessing or using americasdumpsterrentals.com (the “Site”), you agree to be bound by these Terms
+            By accessing or using dumpsterrentals.com (the “Site”), you agree to be bound by these Terms
             of Service. If you do not agree, please do not use the Site.
           </p>
         </section>
@@ -62,8 +62,7 @@ export default function TermsOfServicePage() {
         <section>
           <h2 className="font-semibold mb-3">4. Intellectual Property</h2>
           <p className="text-sm text-muted-foreground">
-            All content on this Site – including text, graphics, logos, and code – is the property of
-            americasdumpsterrentals.com or its licensors and is protected by copyright and other laws. You may not
+            All content on this Site – including text, graphics, logos, and code – is the property of the Site or its licensors and is protected by copyright and other laws. You may not
             reproduce, distribute, or create derivative works without our written permission.
           </p>
         </section>
@@ -97,8 +96,7 @@ export default function TermsOfServicePage() {
         <section>
           <h2 className="font-semibold mb-3">8. Indemnification</h2>
           <p className="text-sm text-muted-foreground">
-            You agree to indemnify and hold harmless americasdumpsterrentals.com and its affiliates from any
-            claims, damages, or expenses arising from your violation of these Terms.
+            You agree to indemnify and hold harmless the Site and its affiliates from any claims, damages, or expenses arising from your violation of these Terms.
           </p>
         </section>
 
