@@ -44,7 +44,7 @@ jobs:
           configPath: '.lighthouserc.js'   # 👈 points to your config file
 
       - name: Display and comment Lighthouse results
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         env:
           LINKS: ${{ steps.lighthouse.outputs.links }}
         with:
