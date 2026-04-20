@@ -18,7 +18,7 @@ jobs:
           curl -v -I --fail ${{ github.event.deployment_status.target_url }}
 
       - name: Checkout code
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v6
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4.4.0
